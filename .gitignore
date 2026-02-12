@@ -42,3 +42,6 @@ next-env.d.ts
 
 # tectonic binary
 bin
+
+# script outputs
+out.pdf
