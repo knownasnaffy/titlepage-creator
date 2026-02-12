@@ -45,6 +45,9 @@ export default function UntitledForm() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
+      // Setup Tectonic if needed
+      await fetch("/api/setup-tectonic", { method: "POST" });
+
       const res = await fetch("/api/generate", {
         method: "POST",
         headers: {
