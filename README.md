@@ -28,6 +28,9 @@ Built with Next.js + React + Bun. Key files:
 
 Run `bun run dev` for development server.
 
+> [!WARNING]
+> This app has not been tested with serverless hosting. No guarantee is given about its functionality in serverless environments.
+
 **Customization hints:**
 - **Template styling/variables**: Edit `data/document.tex` to modify LaTeX template. If you add/change variables, update `lib/renderdocumenttex.ts` accordingly.
 - **Tectonic configuration**: Modify `lib/runtectonic.ts` to customize Tectonic installation parameters or use a custom Tectonic install.
