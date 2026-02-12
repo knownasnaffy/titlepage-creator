@@ -8,6 +8,11 @@ export default function Home() {
           Tectonic PDF Generator
         </h1>
         <UntitledForm />
+        <p className="mt-4 text-sm text-zinc-600 dark:text-zinc-400">
+          Note: First run may take a couple of seconds to a minute (dependant on
+          your network speed) as it downloads necessary modules for the PDF
+          engine.
+        </p>
       </main>
     </div>
   );
