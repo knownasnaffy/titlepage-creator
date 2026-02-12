@@ -26,4 +26,8 @@ Built with Next.js + React + Bun. Key files:
 - `lib/` - Utilities and helpers
 - `data/` - Static data files
 
-Run `bun run dev` for development server. Modify components to customize the title page layout and styling.
+Run `bun run dev` for development server.
+
+**Customization hints:**
+- **Template styling/variables**: Edit `data/document.tex` to modify LaTeX template. If you add/change variables, update `lib/renderdocumenttex.ts` accordingly.
+- **Tectonic configuration**: Modify `lib/runtectonic.ts` to customize Tectonic installation parameters or use a custom Tectonic install.
