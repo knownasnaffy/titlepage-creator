@@ -1,0 +1,60 @@
+\documentclass[12pt,oneside]{article}
+
+\usepackage[
+  a4paper,
+  left=16mm,
+  right=16mm,
+  top=12mm,
+  bottom=12mm,
+  bindingoffset=-10mm
+]{geometry}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{calc}
+\usepackage{times}
+
+\usepackage{setspace}
+\setstretch{1.15}
+
+\setlength{\fboxrule}{1.5pt}
+\setlength{\fboxsep}{20mm}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% Outer border filling the usable page
+\fbox{%
+  \parbox[c][\dimexpr\textheight-2\fboxsep-2\fboxrule][c]{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+
+    \centering
+
+    % ---- TOP ----
+    {\Large\bfseries <sub_name>\par}
+
+    \vfill
+
+    % ---- CENTER IMAGE ----
+    \includegraphics[width=0.4\textwidth]{logo.png}
+
+    \vspace{40mm}
+
+    % ---- TWO COLUMNS ----
+    {\Large\bfseries
+    \begin{tabular}{p{0.40\textwidth} p{0.50\textwidth}}
+      Submitted To:       & Subermitted By:                    \\
+      <prof_name>         & <stud_name>                        \\
+                          & <coll_roll_no> (College Roll No)   \\
+                          & <uni_roll_no> (University Roll No)
+    \end{tabular}
+    }
+
+    \vfill
+
+    % ---- BOTTOM ----
+    {\Large\bfseries BABA BANDA SINGH BAHADUR ENGINEERING COLLEGE, FATEHGARH SAHIB\par}
+
+  }%
+}
+
+\end{document}
